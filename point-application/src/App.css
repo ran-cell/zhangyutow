@@ -1,0 +1,223 @@
+body{
+  width: 100%;
+  height: 100vh;
+  background: url(../image/登录页面.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: white;
+}
+/* App容器样式 */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header容器样式 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* NFT画廊容器样式 */
+.nft-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* 每个NFT项的卡片样式 */
+.listBox {
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 0 5px lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.listBox .listImg {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.listBox .listImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.listBox .listTitle {
+  width: calc(100% - 10px);
+  padding: 3px 3px;
+  height: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.listBox .listRemark {
+  width: calc(100% - 10px);
+  padding: 0 5px;
+  margin:  0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.listBox .listBtnBox {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.listBox .listBtnBox button {
+  height: 35px;
+  width: 80%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.listBox .listBtnBox button:disabled {
+  background-color: #ddd;
+}
+input {
+  background-color: #ffffff00;
+  max-width: 190px;
+  height: 20px;
+  padding: 10px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #424242;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+button{
+  position: relative;
+  background: linear-gradient(123deg,#a6c0fe 0%,#12efe0 100%);
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  color: #ffffff;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  transition-duration: 0.6s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+button::after{
+  content: '';
+  background:#53a4f0;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition:all 1.5s;
+}
+button:active::after{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.indexpage{
+  margin-left: 550px;
+  height: 200px;
+  width: 400px;
+  margin-top: 350px;
+}
+.title{
+  height: 100px;
+  width: 600px;
+  margin-left: 520px;
+  margin-top: 50px;
+}
+.bigbox{
+  display: flex;
+  justify-content: space-around;
+}
+.common{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+.common .box{
+  margin: 0 auto;
+  width: 500px;
+  height: 100%;
+  border-radius: 17px;
+  background-color: rgba(0, 0, 0, .5);
+}
+.common .commonbox{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 500px;
+}
+.importdate{
+  height: 250px;
+  width: 300px;
+  border-radius: 17px;
+  background-color: rgba(0, 0, 0, .5);
+}
+.export{
+  height: 250px;
+  width: 300px;
+  border-radius: 17px;
+  background-color: rgba(0, 0, 0, .5);
+}
+.towbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.buttombox{
+  margin: 0 auto;
+  height: 190px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, .5);
+}
+.flexbox{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
